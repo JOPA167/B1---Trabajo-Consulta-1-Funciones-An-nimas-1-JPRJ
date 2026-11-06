@@ -233,7 +233,7 @@ El lenguaje que se me hizo más natural fue **Scala**, ya que al usar las funcio
 
 **¿En qué tipo de problema encontraste más diferencias entre lenguajes y por qué?**
 
-Donde encontré más diferencias fue en las funciones `foreach` y `forall`, especialmente con Java, ya que tiene equivalentes no tan intuitivos y el uso de pasos intermedios lo hace más largo. Esto se puede ver en el ejemplo de [Validación (Parte 3.1, problema 3)](#3-validación-existe-alguno-que-cumpla-todos-cumplen-exists-forall). También encontré que las equivalencias son diferentes entre Scala y Python.
+Donde encontré más diferencias fue en las funciones `foreach` y `forall`, especialmente con Java, ya que tiene equivalentes no tan intuitivos y el uso de pasos intermedios lo hace más largo. Esto se puede ver en el ejemplo de [Validación (Parte 3.1, problema 3)](#3-validación-existe-alguno-que-cumpla-todos-cumplen-exists-forall). También encontré que las equivalencias de algunas funciones son diferentes entre lenguajes, por lo que la documentación es importante.
 
 
 ## Referencias
