@@ -19,7 +19,7 @@ El problema de Netflix era que la app necesitaba datos de muchos servicios a la 
 La solución fue adoptar la programación funcional reactiva con RxJava, donde los datos se tratan como flujos sobre los que se encadenan operaciones, y cada operador recibe una **función anónima (lambda)** que indica qué hacer con cada dato. Según uno de sus ingenieros, este enfoque permitió aprovechar la concurrencia del servidor sin los problemas típicos de seguridad entre hilos y de sincronización.
 
 ```scala
-// Ejemplo ilustrativo (no es código real de Netflix)
+// Ejemplo ilustrativo 
 usuarioService.obtenerPerfil(id)
   .flatMap(perfil => recomendaciones.para(perfil))   // pide recomendaciones
   .filter(r => r.estaDisponible)                     // descarta lo no disponible
@@ -234,3 +234,16 @@ El lenguaje que se me hizo más natural fue **Scala**, ya que al usar las funcio
 **¿En qué tipo de problema encontraste más diferencias entre lenguajes y por qué?**
 
 Donde encontré más diferencias fue en las funciones `foreach` y `forall`, especialmente con Java, ya que tiene equivalentes no tan intuitivos y el uso de pasos intermedios lo hace más largo. Esto se puede ver en el ejemplo de [Validación (Parte 3.1, problema 3)](#3-validación-existe-alguno-que-cumpla-todos-cumplen-exists-forall). También encontré que las equivalencias son diferentes entre Scala y Python.
+
+
+## Referencias
+
+Anand, S. (2026, 13 de febrero). *WhatsApp handled 2 billion users with just 50 engineers. Here's the system design that made it possible* [Entrada de blog]. The AI Architect. https://techie007.substack.com/p/whatsapp-handled-2-billion-users
+
+Anthropic. (2026). *Claude* (Claude Sonnet 5.5) [Modelo de lenguaje de gran tamaño]. https://claude.ai
+
+High Scalability. (2014, 31 de marzo). *How WhatsApp grew to nearly 500 million users, 11,000 cores, and 70 million messages a second* [Entrada de blog]. https://highscalability.com/how-whatsapp-grew-to-nearly-500-million-users-11000-cores-an/
+
+Interoperability @ Microsoft. (2013, 5 de febrero). *Netflix: Solving big problems with Reactive Extensions (Rx)* [Entrada de blog]. Microsoft Learn. https://learn.microsoft.com/en-us/archive/blogs/interoperability/netflix-solving-big-problems-with-reactive-extensions-rx
+
+
